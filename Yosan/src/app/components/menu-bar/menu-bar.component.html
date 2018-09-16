@@ -1,0 +1,31 @@
+<div class="menu-bar" [class.mac]="isMac()" [class.normal]="isOther()">
+  <div class="mac-controls">
+    <div class="mac-buttons">
+      <div class="close red" (click)="close()">
+        <fa-icon [icon]="windowClose"></fa-icon>
+      </div>
+      <div class="minimize yellow" (click)="minimize()">
+        <fa-icon [icon]="windowMinimize"></fa-icon>
+      </div>
+      <div class="full green" (click)="maximize()">
+        <fa-icon [icon]="windowMaximize" ></fa-icon>
+      </div>
+    </div>
+  </div>
+  <div class="project-title">
+    <div>Yosan</div>
+  </div>
+  <div class="normal-controls">
+    <div class="norm-buttons controls">
+      <div class="minimize" (click)="minimize()">
+        <fa-icon [icon]="windowMinimize"></fa-icon>
+      </div>
+      <div class="full" (click)="maximize()">
+        <fa-icon [icon]="windowMaximize"></fa-icon>
+      </div>
+      <div class="close" (click)="close()">
+        <fa-icon [icon]="windowClose"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>
